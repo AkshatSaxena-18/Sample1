@@ -1,0 +1,140 @@
+/*create table Machine
+(
+   M_id int primary key,
+   M_name varchar(50) Not NUll check(M_name=upper(M_name)),
+   M_type varchar(10) check(M_type in('drilling','milling','lathe','turning','grinding')),
+   M_price int check(M_price>0),
+   M_cost int ,
+   check(M_cost<M_price));
+   
+   insert into Machine values(01,'abcd','drilling',10000,1200),
+   (02,'abc','milling',15000,10000),
+   (03,'fgh','lathe',11000,9500),
+   (04, 'ijk','turning',5500,600),
+   (05,'pqr','grinding',9900,5400);
+   
+   select *from Machine;
+*/
+-- create table Employee
+-- (
+--   E_id int primary key,
+--   E_name varchar(50) Not Null check(E_name=upper(E_name)),
+--   E_desg varchar(10)  check(E_desg in('manager','staff','worker')),
+--   E_sal float check(E_sal>0),
+--   E_uid int unique,
+--   check(E_uid!=E_id));
+   
+--   insert into Employee values(01,'ARUN','manager',25000,1500),
+--   (02,'ADIYHYA','staff',5000,5400),
+--   (03,'RAJU','worker',3000,1800);
+   
+--   select *from Employee;
+
+
+-- create table Student
+-- ( 
+--   Stud_id int primary key,
+--   Stud_name varchar(50) Not Null check(Stud_name=upper(Stud_name)),
+--   Stud_class varchar(10) check(Stud_class in('FY','SY','TY')),
+--   Stud_marks int check(Stud_marks>0),
+--   stud_uid int unique,
+--   check(Stud_uid!=Stud_id));
+   
+--   insert into Student values(01,'AKSHAT','FY',85,52),
+--   (02,'KRISHNA','FY',75,11),
+--   (03,'AJINKHYA','FY',72,22),
+--   (04,'VAISHNAV','FY',81,23),
+--   (05,'ADI','FY',55,24);
+   
+   
+   
+--   select *from Student;
+/*
+
+create table S_master
+(
+   s_no int,
+   s_name varchar(50),
+   city varchar(20),
+   phone_no int,
+   amount int 
+   );
+   
+   
+   Alter table S_master
+   Add primary key(s_no);
+   
+   Alter table S_master
+   Add constraint city_check check(city in('pune','mumbai','calcutta'));
+   
+   Alter table S_master
+   Drop phone_no;
+   
+   Alter table S_master
+   Alter column s_name type varchar(5);
+   
+   Alter table S_master 
+   Drop constraint city_check;
+   
+   Drop table S_master;
+   
+  */
+  
+ /* create table Employee
+  (
+    E_no int ,
+    E_name varchar(50),
+    sal int
+    );
+    
+    Alter table Employee
+    Add column designation varchar(50);
+   */
+   
+  /* 
+   create table Student(
+     student_no int,
+     s_name varchar(50),
+     DOB int );
+     
+     Alter table student
+     Add column Address text Not Null,Add column phone_no int;
+    */
+  /*  
+    create table project
+    (
+      student_no int primary key,
+      Stud_name varchar(50) );
+      
+      Alter table project
+      Add constraint ncheck check(Stud_name like 'R%'); 
+    */  
+    /* 
+     create table hospital
+     (
+       patient_no int primary key,
+       patient_name varchar(50));
+    
+      Alter table hospital
+      Add column hbudget int,Add constraint hbudget check(hbudget>50000);
+      
+     */
+   /*  
+     create table college
+     (
+       college_id int primary key,
+       college_name varchar(50),
+       college_city varchar(50));
+       
+       insert into college values('43','MIT','Pune'),
+       ('44','WPU','PUne'),
+       ('45','Ferguisen','Pune');
+       
+       select *from college;
+       
+       select *from college;
+     */
+     
+     
+      
+          
